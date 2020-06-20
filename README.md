@@ -1,4 +1,4 @@
-#Evaluate a News Site utilizing a Natural Language Processor API
+# Evaluate a News Site utilizing a Natural Language Processor API
 
 This project brought multiple lessons together, calling upon existing learnings
 including: HTML, CSS, JavaScript, and WebAPIs and newly learned Webpack skills.
@@ -6,11 +6,11 @@ including: HTML, CSS, JavaScript, and WebAPIs and newly learned Webpack skills.
 ## To run program
 
 * Clone the repo to your computer
-* ```bash cd {cloned directory}``` into the cloned directory
-* Run ```bash npm install``` on your terminal
+* ```cd {cloned directory}``` into the cloned directory
+* Run ```npm install``` on your terminal
 * Utilize the scripts to build and start the program
-  *  ```bash npm run build-prod```
-  *  ```bash npm run start```
+  *  ```npm run build-prod```
+  *  ```npm run start```
 * Then open the server on [localhost:8080](https://localhost:8080)
 
 ## What does it do?
