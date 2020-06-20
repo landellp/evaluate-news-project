@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.aylien {
+  flex-shrink: 1;
+  padding: 20px;
+}
+
+img {
+  height: 250px;
+}

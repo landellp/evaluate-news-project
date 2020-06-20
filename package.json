@@ -1,0 +1,69 @@
+{
+  "name": "evaluate-news-project",
+  "version": "1.0.0",
+  "engines": {
+    "node": "13.x",
+    "npm": "6.x"
+  },
+  "main": "index.js",
+  "module": "module.js",
+  "modules.root": "lib",
+  "proxy": "http://localhost:8080",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/server/index.js",
+    "dev": "webpack --mode development --hot",
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack-dev-server  --config webpack.dev.js --open",
+    "webpack-dev-server": "node src/server/index.js",
+    "build-server": "babel -d ./build .server -s"
+  },
+  "keywords": [],
+  "author": "Preston Landell",
+  "license": "MIT",
+  "description": "Natural Language Processor",
+  "dependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "aylien_textapi": "^0.7.0",
+    "babel-node": "0.0.1-security",
+    "body-parser": "^1.19.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fibers": "^4.0.1",
+    "isuri": "^2.0.3",
+    "sass": "^1.22.12",
+    "serviceworker-webpack-plugin": "^1.0.1",
+    "valid-url": "^1.0.9",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "workbox-webpack-plugin": "^5.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "mini-css-extract-plugin": "^0.8.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "superagent": "^5.1.0",
+    "supertest": "^4.0.2",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landellp/Evaluate-News-Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/landellp/Evaluate-News-Project/issues"
+  },
+  "homepage": "https://github.com/landellp/Evaluate-News-Project#readme"
+}

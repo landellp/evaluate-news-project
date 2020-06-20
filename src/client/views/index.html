@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>TEST</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="Aylien">
+            <img src="https://files.startupranking.com/startup/thumb/45506_213fd071f80b5df67b2b889443ee741302215063_aylien_l.png" alt="AylienAPI">
+        </div>
+    </header>
+    <main>
+        <section>
+          <div class="title"><h1><strong>Aylien Sentiment Analysis API</strong></h1></div>
+            <form class="form" onsubmit="return Client.handleSubmit(event)">
+                <input id="name" type="url" name="input" placeholder="Enter a news articl URL to determine article sentiment" value="">
+                <input id="callapi" name="" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)" type="submit" value="submit">
+            </form>
+            <div id="error"></div>
+            <h2><strong>Article Sentiment</strong></h2>
+            <section class="results">
+                <div class="resultlists">
+                  <div class="list">
+                    <div class="left"><h3>Aylien Article Polarity: </h3></div>
+                    <div class="right"><p id="polarity"></p></div>
+                  </div>
+                  <div class="list">
+                    <div class="left"><h4>Article Polarity Confidence: </h4></div>
+                    <div class="right"><p id="polarity_confidence"></p></div>
+                  </div>
+                  <div class="list">
+                    <div class="left"><h3>Aylien Article Subject: </h3></div>
+                    <div class="right"><p id="subjectivity"></p></div>
+                  </div>
+                  <div class="list">
+                    <div class="left"><h4>Article Subject Confidence: </h4></div>
+                    <div class="right"><p id="subjectivity_confidence"></p></div>
+                 </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('SW registered: ', registration);
+                });
+            });
+        } else {
+            console.log("Service Working not working");
+        }
+    </script>
+    <footer>
+        <p>All Rights Reserved &copy; 2020</p>
+    </footer>
+</body>
+
+</html>
