@@ -5,7 +5,7 @@ const handleSubmit = function (event) {
 let formText = document.getElementById('name').value;
     // check for valid url
     if (userUrl.isWebUri(formText)) {
-        apiData('http://localhost:8080/post', formText);
+        apiData('http://localhost:8081/post', formText);
     } else {
         alert('Please Enter a Valid URL - including http(s)://');
         }
@@ -36,4 +36,4 @@ const apiData = async (url, input) => {
         }
     }
 
-export { handleSubmit, userUrl }
+export { handleSubmit, userUrl, apiData }
