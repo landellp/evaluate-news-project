@@ -1,4 +1,4 @@
-#Evaluate a News Site utilizing a Natural Language Processor API
+# Evaluate a News Site utilizing a Natural Language Processor API
 
 This project brought multiple lessons together, calling upon existing learnings
 including: HTML, CSS, JavaScript, and WebAPIs and newly learned Webpack skills.
